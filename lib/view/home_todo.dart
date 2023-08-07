@@ -182,7 +182,7 @@ class _HomeScreenState extends State<HomeScreen> {
           );
 
           if (data != null) {
-            debugPrint("Data --> $data");
+            debugPrint("Data ---> $data");
             toDoList = data;
             setState(() {});
           }

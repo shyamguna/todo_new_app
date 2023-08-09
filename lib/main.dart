@@ -1,6 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:todo_new_app/firebase_options.dart';
+import 'package:todo_new_app/view/Date_Time_Picker.dart';
+import 'package:todo_new_app/view/slider_screen.dart';
 
 import 'view/splashscreen.dart';
 
@@ -9,7 +11,7 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  runApp(MyApp());
+  runApp(const MyApp(),);
 }
 
 class MyApp extends StatelessWidget {
@@ -25,7 +27,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:  const Splashscreen(),
+      home:  const Date_Time_Picker(),
     );
   }
 }
